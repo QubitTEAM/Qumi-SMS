@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/img_btn_setting_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:background="@color/darkBackGround"
+        android:src="@drawable/ic_sun"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/darkThemeAccent" />
+
+    <TextView
+        android:id="@+id/tv_setting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/dark_mode"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/darkThemeSecondaryTextBrighter"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_setting_icon"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_setting_icon"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_setting_icon"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.vimalcvs.switchdn.DayNightSwitch
+        android:id="@+id/switch_app_mode"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_setting_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_setting_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_setting_name"
+        app:layout_constraintVertical_bias="0.5"
+        android:gravity="center"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

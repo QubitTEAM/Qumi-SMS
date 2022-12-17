@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qumi.presentation.settings.SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_app_mode"
+            layout="@layout/app_mode_setting_item"/>
+
+        <include
+            android:id="@+id/include_notification"
+            layout="@layout/setting_item"/>
+        <include
+            android:id="@+id/include_chat_setting"
+            layout="@layout/setting_item"/>
+        <include
+            android:id="@+id/include_privacy"
+            layout="@layout/setting_item"/>
+
+        <include
+            android:id="@+id/include_data_tracker"
+            layout="@layout/setting_item" />
+
+        <include
+            android:id="@+id/include_about"
+            layout="@layout/setting_item" />
+
+
+    </LinearLayout>
+</ScrollView>

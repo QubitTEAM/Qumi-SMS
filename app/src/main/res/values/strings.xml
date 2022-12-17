@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Qumi</string>
+
+    <string name="social">Social</string>
+    <string name="services">Service</string>
+    <string name="spam">Spam</string>
+
+    <string name="chat">Chat</string>
+    <string name="chatting">Chatting</string>
+    <string name="setting">Setting</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="allchats">All </string>
+    <string name="delivered">Delivered</string>
+    <string name="failed">Failed</string>
+    <string name="sending">sending…</string>
+    <string name="home">Home</string>
+    <string name="tracker">Tracker</string>
+    <string name="sim1">SIM1</string>
+    <string name="sim2">SIM2</string>
+    <string name="consumed">Consumed:</string>
+    <string name="left">Left:</string>
+    <string name="most_consuming_chats">Most Consuming Chats</string>
+    <string name="bundles">Bundles</string>
+    <string name="bundle">Bundle:</string>
+    <string name="auto_renew">Auto Renew</string>
+    <string name="expired">Expired:</string>
+    <string name="activated">Activated:</string>
+    <string name="text_or_contact_to_search_for">Text or contact to search for</string>
+    <string name="search">Search</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="notification">Notification</string>
+    <string name="chat_setting">Chat Setting</string>
+    <string name="privacy_security">Privacy and Security</string>
+    <string name="data_tracker">Data and Tracker</string>
+    <string name="about">About</string>
+    <string name="new_message">New Message</string>
+    <string name="select_contact_s">Select Contact(s)</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="lorem_ipsum">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</string>
+    <string name="select_all">Select All</string>
+    <string name="share">Share</string>
+    <string name="archive">Archive</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="messages">Messages</string>
+    <string name="username">Username</string>
+    <string name="both">Both</string>
+    <string name="mute">Mute</string>
+    <string name="anchor">Anchor</string>
+
+</resources>

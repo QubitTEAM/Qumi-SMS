@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_12sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/sent_message_dark_bg"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:maxWidth="@dimen/_230sdp"
+        android:text="@string/lorem_ipsum"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_btn_sim_card"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_sim_card"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_message_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_message_state"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_message_date"
+        app:layout_constraintVertical_bias="0.5"
+        app:tint="@color/gray3" />
+
+    <TextView
+        android:id="@+id/tv_sim_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_sim_card"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_sim_card"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_sim_card"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_sim_card"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_message_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:text="@string/delivered"
+        android:textColor="@color/trackerGray"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_sim_card"
+        app:layout_constraintEnd_toStartOf="@id/tv_message_date"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_sim_card"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_message_date"
+        android:layout_width="33dp"
+        android:layout_height="16dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="12:01"
+        android:textColor="@color/trackerGray"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

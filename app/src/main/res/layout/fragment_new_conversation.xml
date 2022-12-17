@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.qumi.presentation.messages.components.NewConversationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_people_to_send_messages"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingStart="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_select_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/select_contact_s"
+                android:textColor="@color/darkThemeSecondaryText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_people_to_send_messages" />
+
+            <TextView
+                android:id="@+id/tv_num_select_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="4/17"
+                android:textColor="@color/darkThemeSecondaryTextBrighter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tv_select_contact"
+                app:layout_constraintTop_toBottomOf="@+id/rv_people_to_send_messages" />
+
+
+            <ImageButton
+                android:id="@+id/img_btn_write_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect_img_btn_dark_mode"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_send"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_select_contact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_select_contact"
+                app:tint="@color/darkThemeAccent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_users_of_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_390sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/img_btn_write_message"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/ed_write_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_65sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:background="@color/darkBackGround"
+                    android:hint="@string/write_a_message"
+                    android:maxLines="4"
+                    android:textColorHint="@color/darkThemeMessagesNumberDarker"
+                    android:textColor="@color/darkThemePrimaryText"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/img_btn_smiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:background="@color/darkBackGround"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_smile_dark"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <ImageButton
+                    android:id="@+id/img_btn_attached"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkBackGround"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_attach_dark"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_btn_smiles"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ed_write_message"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_btn_smiles"
+                    app:layout_constraintTop_toTopOf="@+id/img_btn_smiles"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <ImageButton
+                    android:id="@+id/img_btn_sim_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkBackGround"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_sim_card"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_btn_attached"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_btn_send"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/ed_write_message"
+                    app:layout_constraintTop_toTopOf="@+id/img_btn_attached"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:tint="@color/darkThemeMessagesNumberDarker" />
+
+
+                <ImageButton
+                    android:id="@+id/img_btn_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:background="@drawable/ripple_effect_img_btn_dark_mode"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_send"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_sim_num"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_sim_num"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:tint="@color/darkThemeAccent" />
+
+                <TextView
+                    android:id="@+id/tv_sim_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/_2"
+                    android:textColor="@color/darkThemePrimaryText"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_btn_sim_card"
+                    app:layout_constraintEnd_toEndOf="@+id/img_btn_sim_card"
+                    app:layout_constraintEnd_toStartOf="@+id/img_btn_send"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/img_btn_sim_card"
+                    app:layout_constraintTop_toTopOf="@+id/img_btn_sim_card" />
+
+                <TextView
+                    android:id="@+id/tv_message_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60/150"
+                    android:textSize="@dimen/_9sdp"
+                    android:visibility="gone"
+                    android:textColor="@color/darkThemeSecondaryText"
+                    app:layout_constraintBottom_toTopOf="@+id/img_btn_send"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ed_write_message"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
